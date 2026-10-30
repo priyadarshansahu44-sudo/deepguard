@@ -1,0 +1,43 @@
+{
+  "passed": 7,
+  "checks": [
+    "GET / serves the DeepGuard HTML (200)",
+    "JavaScript and CSS assets are served (200)",
+    "GET /api/health truthfully reports degraded / 0 models",
+    "POST /api/features decodes a real multipart upload and returns waveform, 64x201 Log-Mel and original metadata",
+    "POST /api/predict returns 503 with missing filenames; no probability is fabricated",
+    "Corrupt audio returns 422",
+    "Interactive API documentation is served"
+  ],
+  "health": {
+    "status": "degraded",
+    "model_loaded": false,
+    "models": 0,
+    "missing_models": [
+      "cnn_seed0.pt",
+      "cnn_seed1.pt",
+      "cnn_seed2.pt"
+    ],
+    "detail": "Missing original checkpoints: cnn_seed0.pt, cnn_seed1.pt, cnn_seed2.pt",
+    "threshold": 0.5,
+    "checkpoint_sha256": {},
+    "checkpoint_provenance": "not independently matched to historical metrics"
+  },
+  "preview": {
+    "filename": "software-test-tone.wav",
+    "duration_seconds": 3.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "processed_duration_seconds": 2.0,
+    "processed_sample_rate": 16000,
+    "processed_channels": 1,
+    "analyzed_source_seconds": 2.0,
+    "mel_bands": 64,
+    "hop_seconds": 0.01,
+    "warnings": [
+      "Only the first 2 seconds are classified, matching training."
+    ]
+  },
+  "test_signal": "Generated non-speech tone; no model-quality or speech-label claim",
+  "prediction_status": 503
+}

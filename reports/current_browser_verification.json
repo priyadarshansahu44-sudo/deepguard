@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    "three-model readiness",
+    "real human-labelled audio upload",
+    "actual ensemble response displayed",
+    "both probabilities and confidence displayed",
+    "three individual CNN results displayed",
+    "desktop screenshot",
+    "mobile no horizontal overflow",
+    "invalid audio clears verdict and disables analysis",
+    "no JavaScript page errors",
+    "network failure gives actionable error",
+    "same file can be retried successfully",
+    "favicon returns 200"
+  ],
+  "ground_truth": "genuine (user-confirmed)",
+  "prediction": "synthetic; false positive",
+  "errors": []
+}

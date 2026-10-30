@@ -1,0 +1,7 @@
+condition,roc_auc,eer
+clean,0.955,0.118
+noise 20 dB,0.907,0.167
+noise 10 dB,0.88,0.205
+noise 0 dB,0.798,0.288
+8 kHz bandlimit,0.813,0.253
+mu-law 64 levels,0.871,0.223

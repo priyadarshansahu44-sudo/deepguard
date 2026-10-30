@@ -1,0 +1,345 @@
+{
+  "kind": "fresh inference with supplied checkpoints",
+  "threshold": 0.5,
+  "checkpoint_sha256": {
+    "cnn_seed0.pt": "cd275be6190249a8b30e4af7993fb62134797b853a3646923cbcb708ed20858e",
+    "cnn_seed1.pt": "9811b888b5ef494b979d146ff5cfade9d7244693da48f049450df9805967c6c2",
+    "cnn_seed2.pt": "6fac1e6c0c7a649eab28d6b64f136902e073f464ba3614c4e553eb0fd0ba7bfc"
+  },
+  "conditions": {
+    "clean": {
+      "n": 1,
+      "accuracy": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "roc_auc": null,
+      "eer": null,
+      "limitation": "Only one ground-truth class available. Discrimination metrics are not reported; accuracy is a single-class smoke check."
+    },
+    "noise_20dB": {
+      "n": 1,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "roc_auc": null,
+      "eer": null,
+      "limitation": "Only one ground-truth class available. Discrimination metrics are not reported; accuracy is a single-class smoke check."
+    },
+    "noise_10dB": {
+      "n": 1,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "roc_auc": null,
+      "eer": null,
+      "limitation": "Only one ground-truth class available. Discrimination metrics are not reported; accuracy is a single-class smoke check."
+    },
+    "noise_0dB": {
+      "n": 1,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "roc_auc": null,
+      "eer": null,
+      "limitation": "Only one ground-truth class available. Discrimination metrics are not reported; accuracy is a single-class smoke check."
+    },
+    "mulaw_64": {
+      "n": 1,
+      "accuracy": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "roc_auc": null,
+      "eer": null,
+      "limitation": "Only one ground-truth class available. Discrimination metrics are not reported; accuracy is a single-class smoke check."
+    },
+    "8khz_roundtrip": {
+      "n": 1,
+      "accuracy": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "roc_auc": null,
+      "eer": null,
+      "limitation": "Only one ground-truth class available. Discrimination metrics are not reported; accuracy is a single-class smoke check."
+    }
+  },
+  "samples": [
+    {
+      "path": "audio_2026-10-30_18-28-14.ogg",
+      "label": 0,
+      "label_source": "User explicitly confirmed human recording in this chat on 2026-10-30",
+      "domain": "user recording",
+      "unseen_source_verified": false,
+      "sha256": "879b13baa058ebd295c950129c4755eee3bf4ec40a5672c16c2f6e1f94f91b6c",
+      "predictions": {
+        "clean": {
+          "label": "SYNTHETIC / DEEPFAKE",
+          "fake_probability": 0.7028319835662842,
+          "genuine_probability": 0.2971680164337158,
+          "confidence": 0.7028319835662842,
+          "threshold": 0.5,
+          "seed_probabilities": [
+            0.7500002384185791,
+            0.6265646815299988,
+            0.7319310307502747
+          ],
+          "individual_predictions": [
+            {
+              "seed": 0,
+              "fake_probability": 0.7500002384185791,
+              "genuine_probability": 0.2499997615814209,
+              "label": "SYNTHETIC / DEEPFAKE"
+            },
+            {
+              "seed": 1,
+              "fake_probability": 0.6265646815299988,
+              "genuine_probability": 0.3734353184700012,
+              "label": "SYNTHETIC / DEEPFAKE"
+            },
+            {
+              "seed": 2,
+              "fake_probability": 0.7319310307502747,
+              "genuine_probability": 0.26806896924972534,
+              "label": "SYNTHETIC / DEEPFAKE"
+            }
+          ],
+          "models": 3
+        },
+        "noise_20dB": {
+          "label": "GENUINE HUMAN SPEECH",
+          "fake_probability": 0.24320206542809805,
+          "genuine_probability": 0.7567979345719019,
+          "confidence": 0.7567979345719019,
+          "threshold": 0.5,
+          "seed_probabilities": [
+            0.1705501526594162,
+            0.2743659019470215,
+            0.28469014167785645
+          ],
+          "individual_predictions": [
+            {
+              "seed": 0,
+              "fake_probability": 0.1705501526594162,
+              "genuine_probability": 0.8294498473405838,
+              "label": "GENUINE HUMAN SPEECH"
+            },
+            {
+              "seed": 1,
+              "fake_probability": 0.2743659019470215,
+              "genuine_probability": 0.7256340980529785,
+              "label": "GENUINE HUMAN SPEECH"
+            },
+            {
+              "seed": 2,
+              "fake_probability": 0.28469014167785645,
+              "genuine_probability": 0.7153098583221436,
+              "label": "GENUINE HUMAN SPEECH"
+            }
+          ],
+          "models": 3
+        },
+        "noise_10dB": {
+          "label": "GENUINE HUMAN SPEECH",
+          "fake_probability": 0.16099415719509125,
+          "genuine_probability": 0.8390058428049088,
+          "confidence": 0.8390058428049088,
+          "threshold": 0.5,
+          "seed_probabilities": [
+            0.08634532988071442,
+            0.18150636553764343,
+            0.2151307761669159
+          ],
+          "individual_predictions": [
+            {
+              "seed": 0,
+              "fake_probability": 0.08634532988071442,
+              "genuine_probability": 0.9136546701192856,
+              "label": "GENUINE HUMAN SPEECH"
+            },
+            {
+              "seed": 1,
+              "fake_probability": 0.18150636553764343,
+              "genuine_probability": 0.8184936344623566,
+              "label": "GENUINE HUMAN SPEECH"
+            },
+            {
+              "seed": 2,
+              "fake_probability": 0.2151307761669159,
+              "genuine_probability": 0.7848692238330841,
+              "label": "GENUINE HUMAN SPEECH"
+            }
+          ],
+          "models": 3
+        },
+        "noise_0dB": {
+          "label": "GENUINE HUMAN SPEECH",
+          "fake_probability": 0.04806303543349107,
+          "genuine_probability": 0.9519369645665089,
+          "confidence": 0.9519369645665089,
+          "threshold": 0.5,
+          "seed_probabilities": [
+            0.026291275396943092,
+            0.03959433734416962,
+            0.0783034935593605
+          ],
+          "individual_predictions": [
+            {
+              "seed": 0,
+              "fake_probability": 0.026291275396943092,
+              "genuine_probability": 0.9737087246030569,
+              "label": "GENUINE HUMAN SPEECH"
+            },
+            {
+              "seed": 1,
+              "fake_probability": 0.03959433734416962,
+              "genuine_probability": 0.9604056626558304,
+              "label": "GENUINE HUMAN SPEECH"
+            },
+            {
+              "seed": 2,
+              "fake_probability": 0.0783034935593605,
+              "genuine_probability": 0.9216965064406395,
+              "label": "GENUINE HUMAN SPEECH"
+            }
+          ],
+          "models": 3
+        },
+        "mulaw_64": {
+          "label": "SYNTHETIC / DEEPFAKE",
+          "fake_probability": 0.7805241942405701,
+          "genuine_probability": 0.21947580575942993,
+          "confidence": 0.7805241942405701,
+          "threshold": 0.5,
+          "seed_probabilities": [
+            0.849003255367279,
+            0.6773340702056885,
+            0.8152352571487427
+          ],
+          "individual_predictions": [
+            {
+              "seed": 0,
+              "fake_probability": 0.849003255367279,
+              "genuine_probability": 0.15099674463272095,
+              "label": "SYNTHETIC / DEEPFAKE"
+            },
+            {
+              "seed": 1,
+              "fake_probability": 0.6773340702056885,
+              "genuine_probability": 0.3226659297943115,
+              "label": "SYNTHETIC / DEEPFAKE"
+            },
+            {
+              "seed": 2,
+              "fake_probability": 0.8152352571487427,
+              "genuine_probability": 0.18476474285125732,
+              "label": "SYNTHETIC / DEEPFAKE"
+            }
+          ],
+          "models": 3
+        },
+        "8khz_roundtrip": {
+          "label": "SYNTHETIC / DEEPFAKE",
+          "fake_probability": 0.5775663654009501,
+          "genuine_probability": 0.4224336345990499,
+          "confidence": 0.5775663654009501,
+          "threshold": 0.5,
+          "seed_probabilities": [
+            0.5891456604003906,
+            0.5595694780349731,
+            0.5839839577674866
+          ],
+          "individual_predictions": [
+            {
+              "seed": 0,
+              "fake_probability": 0.5891456604003906,
+              "genuine_probability": 0.4108543395996094,
+              "label": "SYNTHETIC / DEEPFAKE"
+            },
+            {
+              "seed": 1,
+              "fake_probability": 0.5595694780349731,
+              "genuine_probability": 0.44043052196502686,
+              "label": "SYNTHETIC / DEEPFAKE"
+            },
+            {
+              "seed": 2,
+              "fake_probability": 0.5839839577674866,
+              "genuine_probability": 0.4160160422325134,
+              "label": "SYNTHETIC / DEEPFAKE"
+            }
+          ],
+          "models": 3
+        }
+      }
+    }
+  ],
+  "unseen_source": {
+    "status": "Not evaluated: no verified source-held-out samples"
+  },
+  "note": "Different degradations of a clip are not independent test samples. Historical metrics are not attributed to these checkpoints."
+}

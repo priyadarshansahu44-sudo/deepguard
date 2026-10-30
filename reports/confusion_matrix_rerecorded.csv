@@ -1,0 +1,3 @@
+true_class,predicted_genuine,predicted_synthetic
+genuine,273,27
+synthetic,265,35

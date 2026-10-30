@@ -1,0 +1,14 @@
+{
+  "assignment.jpg": {
+    "sha256": "d7d5e9f6f9baa0c4c885b2597d747d277df387c06977963de1f3e43f37cca288",
+    "bytes": 123836
+  },
+  "original.ipynb": {
+    "sha256": "4ff501e2b78022d182e8fc0525f4d2f25f1dc1f98cb004a776e3599891b7ae08",
+    "bytes": 146086
+  },
+  "original_export.py.txt": {
+    "sha256": "1f5c9ebf09f414de75b9f4a409c0f6d15e9081542b0960700d65142cac0e462d",
+    "bytes": 61029
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "Actual frontend handlers consume live API response in a minimal DOM harness; graphical browser rendering not tested",
+  "verdict": "SYNTHETIC / DEEPFAKE",
+  "fake": "70.3%",
+  "genuine": "29.7%",
+  "confidence": "70.3%",
+  "individual": [
+    "CNN seed 0: SYNTHETIC / DEEPFAKE · Synthetic 75.0% · Genuine 25.0%",
+    "CNN seed 1: SYNTHETIC / DEEPFAKE · Synthetic 62.7% · Genuine 37.3%",
+    "CNN seed 2: SYNTHETIC / DEEPFAKE · Synthetic 73.2% · Genuine 26.8%"
+  ],
+  "ground_truth": "human, user-confirmed",
+  "correct": false
+}

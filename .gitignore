@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+data/
+demo/*.wav
+demo/*.flac
+demo/*.ogg
+*.log
+work/
+outputs/
+# Keep original, verified model files when recovered; they are small enough for Git.
